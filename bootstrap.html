@@ -6,6 +6,7 @@
     <title>Flipster Demo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- <link rel="stylesheet" href="../../demo.css"> -->
     <link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -22,11 +23,14 @@
             width:100vw;
             background: lightgreen;
         }
-
+        .container
+        {
+            width:80% !important;
+        }
         /*Modified*/
         #flat
         {
-        	position: fixed;
+        	/*position: fixed;*/
         	top:2%;      	
         	left:10%;
         	right:10%; 
@@ -40,7 +44,8 @@
 
         ul li img
         {
-        	padding: 0px 30px;
+        	/*padding: 0px 30px;*/
+        	margin: auto;
         }
 
         body
@@ -50,7 +55,8 @@
     </style>
 </head>
 <body>
-<article id="demo-flat" class="demo">
+<div class="container">
+<div id="demo-flat" class="demo">
 
     <div id="flat">
     	<!-- Added a new class to ul named 'uls' and changed height of all imgs-->
@@ -75,7 +81,7 @@
             </li>
         </ul>
     </div>
-
+</div>
 <script>
     var flat = $("#flat").flipster({
         style: 'flat',
@@ -190,6 +196,7 @@
         <div class="item" style="background: red;"><h1>PHP 4</h1></div>
         <div class="item" style="background: cyan;"><h1>PHP 5</h1></div>
     </div>
+</div>
 </div>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
