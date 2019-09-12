@@ -3,6 +3,7 @@
 <head>
 	<title>My Gallery</title>
 	<link rel="stylesheet" type="text/css" href="css/template.css">
+	<link rel="stylesheet" type="text/css" href="css/spinner.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -11,6 +12,15 @@
 
 </head>
 <body>
+	<div id="loader">
+		<div id="overlayer" style="margin:auto;"></div>
+<span class="loader">
+  <span class="loader-inner"></span>
+</span>
+<h1>Example of preloading for web page using jQuery</h1>
+<img src="http://bendtech.com/wp-content/uploads/Logo.png" alt="" width="30%" style="text-align:center;margin:auto;position:relative; border:2px solid red;">
+	</div>
+	<div id="main" style="display:none;">
 	<nav class="navbar navbar-expand navbar-light bg-light">
 		<div class="container" style="">
 	 		<a class="navbar-brand" href="#">Gallery_Name</a>
@@ -44,7 +54,7 @@
 	<div class="container">
 		<div class="row">
 			<!-- STARTING OF ONE PIC -->
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-6">
 				<div class="hovereffect img-thumbnail">
 				    <img src="https://i.imgur.com/CO79hsR.png" width="100%">
 				    <div class="overlay">
@@ -65,7 +75,7 @@
 			<!-- ENDING OF ONE PIC -->
 
 			<!-- STARTING OF ONE PIC -->
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-6">
 				<div class="hovereffect img-thumbnail">
 				    <img src="https://i.imgur.com/2F3Al82.jpg" width="100%">
 				    <div class="overlay">
@@ -86,7 +96,7 @@
 			<!-- ENDING OF ONE PIC -->
 
 			<!-- STARTING OF ONE PIC -->
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-6">
 				<div class="hovereffect img-thumbnail">
 				    <img src="https://i.imgur.com/Gh4LZnk.png" width="100%">
 				    <div class="overlay">
@@ -107,7 +117,7 @@
 			<!-- ENDING OF ONE PIC -->
 
 			<!-- STARTING OF ONE PIC -->
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-6">
 				<div class="hovereffect img-thumbnail">
 				    <img src="https://i.imgur.com/aUhpEz3.jpg" width="100%">
 				    <div class="overlay">
@@ -128,7 +138,7 @@
 			<!-- ENDING OF ONE PIC -->
 
 			<!-- STARTING OF ONE PIC -->
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-6">
 				<div class="hovereffect img-thumbnail">
 				    <img src="https://i.imgur.com/qqFsein.jpg" width="100%">
 				    <div class="overlay">
@@ -149,7 +159,7 @@
 			<!-- ENDING OF ONE PIC -->	
 
 			<!-- STARTING OF ONE PIC -->
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-6">
 				<div class="hovereffect img-thumbnail">
 				    <img src="https://i.imgur.com/lhZoAOv.jpg" width="100%">
 				    <div class="overlay">
@@ -170,7 +180,7 @@
 			<!-- ENDING OF ONE PIC -->	
 
 			<!-- STARTING OF ONE PIC -->
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-6">
 				<div class="hovereffect img-thumbnail">
 				    <img src="https://i.imgur.com/Oaq0eip.jpg" width="100%">
 				    <div class="overlay">
@@ -191,11 +201,22 @@
 			<!-- ENDING OF ONE PIC -->	
 
 		</div>
-
+	</div>
 	</div>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		setTimeout(function()
+		{$('#loader').fadeOut("fast",function()
+		{
+			$('#main').fadeToggle(300);
+		})}, 1000);
+		
+	})
+</script>
 <script type="text/javascript">
 	$(document).ready(function()
 	{
