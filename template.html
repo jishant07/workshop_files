@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>My Gallery</title>
-	<link rel="stylesheet" type="text/css" href="css/template.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/template.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/spinner.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -23,7 +23,6 @@
 <span class="loader">
   <span class="loader-inner"></span>
 </span>
-<h1>Example of preloading for web page using jQuery</h1>
 <img src="http://bendtech.com/wp-content/uploads/Logo.png" alt="" width="30%" style="text-align:center;margin:auto;position:relative; border:2px solid red;">
 	</div>
 	<div id="main" style="display:none;">
@@ -46,8 +45,26 @@
 	<div class="container abc" id="login" style="display:none;">
 		<br>
 		<div class="jumbotron">
-			<span>Name -></span><input type="text" name="">
+			<form class="form-group" action="user_check.php" method="POST">
+				<div class="row">
+					<div class="col-lg-6 mb-5">
+						<input type="text" class="form-control" ame="username" required placeholder="Enter the Username">
+					</div>
+				<br>
+				<div class="col-lg-6 mb-5">
+					<input type="password" class="form-control" name="pwd" required placeholder="Enter the Password">
+				</div>
+				</div>	
+				<button class="btn btn-primary">Submit</button>
+			</form>
 		</div>
+	</div>
+	<div class="container abc" id="signup" style="display:none;">
+		<br>
+		<div class="jumbotron">
+			<h1>Sign Up Form</h1>
+		</div>
+		<br>
 	</div>
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container" style="">
@@ -224,12 +241,30 @@
 	})
 </script>
 <script type="text/javascript">
+	var login = 0;
+	var signup = 0;
 	$(document).ready(function()
 	{
 		$('#LogIN').on("click",function()
 		{
+			if(signup)
+			{
+				$('#signup').slideToggle(300);
+				signup = 0;
+			}
 			$('#login').slideToggle(300);
-		})
+			login = 1;
+		});
+		$('#SignUP').on("click",function()
+		{
+			if(login)
+			{
+				$('#login').slideToggle(300);
+				login = 0;
+			}
+			$('#signup').slideToggle(300);
+			signup = 1;
+		});
 	});
 </script>
 </html>

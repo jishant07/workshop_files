@@ -51,7 +51,6 @@
 </head>
 <body>
     <br>
-    <br>
 <div class="container-fluid">
 <div id="demo-flat" class="demo row">
     <div class="col-lg-1"></div>
@@ -89,7 +88,7 @@
 </script>
 <div id="html_info" style="display: none;">
     <button class="back">Back</button>
-    <div class="owl-carousel owl-theme owl-stage nonloop">
+    <div class="owl-carousel owl-one owl-theme owl-stage nonloop">
         <div class="item">
             <h1>HTML 1</h1>
             <p style="padding: 30px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -107,7 +106,7 @@
 </div>
 <div id="css_info" style="display: none;">
     <button class="back">Back</button>
-    <div class="owl-carousel owl-theme owl-stage nonloop">
+    <div class="owl-carousel owl-two owl-theme owl-stage nonloop">
         <div class="item">
             <h1>CSS 1</h1>
             <p style="padding: 30px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -216,14 +215,14 @@
         }
     }
 });
-owl.on('mousewheel', '.owl-stage', function (e) {
+/*owl1.on('mousewheel', '.owl-stage', function (e) {
     if (e.deltaY>0) {
         owl.trigger('prev.owl');
     } else {
         owl.trigger('next.owl');
     }
     e.preventDefault();
-});
+});*/
 </script>
 <script type="text/javascript" src="js/flip.js"></script>
 </html>
