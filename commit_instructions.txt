@@ -7,3 +7,6 @@ To Pull
 git add *
 git commit -m "Message"
 git pull
+
+To clone
+git clone https://www.github.com/jishant07/workshop_files.git
