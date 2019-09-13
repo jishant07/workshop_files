@@ -8,13 +8,13 @@
 }
 .loader {
   display: inline-block;
-  left: 50%;
+  left: 47%;
+  top: 47%;
   width: 80px;
   height: 80px;
   position: absolute;
   z-index:3;
   border: 4px solid #Fff;
-  top: 50%;
   animation: loader 2s infinite ease;
 }
 
@@ -24,6 +24,13 @@
   width: 100%;
   background-color: #fff;
   animation: loader-inner 2s infinite ease-in;
+}
+
+@media screen and (max-width: 512px) {
+.loader {
+  left: 42%;
+  top: 42%;
+  }
 }
 
 @keyframes loader {
