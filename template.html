@@ -2,30 +2,36 @@
 <html>
 <head>
 	<title>My Gallery</title>
-	<!-- <link rel="stylesheet" type="text/css" href="css/template.css"> -->
+
+	<!-- Link to TEMPLATE CSS file -->
+<!-- 	<link rel="stylesheet" type="text/css" href="css/template.css"> -->
+
+	<!-- Link to SPINNER CSS file file -->
 	<link rel="stylesheet" type="text/css" href="css/spinner.css">
+
+	<!-- Bootstrap CDN -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style type="text/css">
-		.loader
-		{
-			left:50%;
-		}
-	</style>
 
+	<!-- FONT AWESOME CDN -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div id="loader">
-		<div id="overlayer" style="margin:auto;"></div>
-<span class="loader">
-  <span class="loader-inner"></span>
-</span>
-<img src="http://bendtech.com/wp-content/uploads/Logo.png" alt="" width="30%" style="text-align:center;margin:auto;position:relative; border:2px solid red;">
-	</div>
-	<div id="main" style="display:none;">
+
+<!-- 	//////////////////////////////////////////////////////////////////////////////////////
+						PRE PAGE LOADER BODY KEEP IT AS IT IS
+	////////////////////////////////////////////////////////////////////////////////////// -->
+	<div id="overlayer"></div>
+	<span class="loader">
+	  <span class="loader-inner"></span>
+	</span>
+
+<!-- 	//////////////////////////////////////////////////////////////////////////////////////
+										NAVBAR
+	////////////////////////////////////////////////////////////////////////////////////// -->
+	<div id="main">
 	<nav class="navbar navbar-expand navbar-light bg-light">
 		<div class="container" style="">
 	 		<a class="navbar-brand" href="#">Gallery_Name</a>
@@ -33,7 +39,7 @@
 	 			<li class="nav-item">
 	 				<a href="#" class="nav-link">Gallery</a>
 	 			</li>
-	 			<li class="nav-item" onclick="a(this)">
+	 			<li class="nav-item">
 	 				<a href="#" class="nav-link" id="LogIN"><i class="fab fa-adn"></i>LogIN</a>
 	 			</li>
 	 			<li class="nav-item">
@@ -66,6 +72,11 @@
 		</div>
 		<br>
 	</div>
+
+
+<!-- 	//////////////////////////////////////////////////////////////////////////////////////
+						MAIN PAGE CONTENT STARTS FROM HERE
+	////////////////////////////////////////////////////////////////////////////////////// -->
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container" style="">
 			<h1 class="display-4">Welcome To Your First Project!!!</h1>
@@ -229,16 +240,27 @@
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/template.js"></script>
+
+<!-- 	//////////////////////////////////////////////////////////////////////////////////////
+						SCRIPT FOR PRE PAGE LOADER 
+	////////////////////////////////////////////////////////////////////////////////////// -->
+
 <script type="text/javascript">
-	$(document).ready(function()
-	{
-		setTimeout(function()
-		{$('#loader').fadeOut("fast",function()
-		{
-			$('#main').fadeToggle(300);
-		})}, 1000);
-		
-	})
+	$(window).on('load',function() {
+		$("body").css("overflow","hidden");
+		$(".loader").delay(2000).fadeOut("slow");
+	  	$("#overlayer").delay(2000).fadeOut("slow", function(){$("body").css("overflow","auto");});	
+	});
+</script>
+
+<!-- 	//////////////////////////////////////////////////////////////////////////////////////
+						SCRIPT FOR TOP SCROLL ON REFRESH
+	////////////////////////////////////////////////////////////////////////////////////// -->
+
+<script type="text/javascript">
+	$(window).on('beforeunload', function(){
+  	$(window).scrollTop(0);
+});
 </script>
 <script type="text/javascript">
 	var login = 0;
