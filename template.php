@@ -331,7 +331,7 @@
 		alert("Login Successful");
 	</script>
 <?php
- 	
+ 	$_SESSION['is_logged_in'] = 0;
 	}
 	elseif (isset($_SESSION['login_error']) && $_SESSION['login_error']) 
 	{
@@ -340,7 +340,7 @@
 		alert("Wrong Credentials");
 	</script>
 <?php
-	
+	$_SESSION['login_error'] = 0;
 	}
 ?>
 </body>
