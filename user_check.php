@@ -1,9 +1,9 @@
 <?php 
 	session_start();
 	extract($_POST);
+	$hash_check = md5($pwd);
 	require('./includes/db_info.php');
-	$password = md5($pwd);
-	$sql = "select email,password from `user_data` where `email`='$email' && `password`='$password'";
+	$sql = "select email,password from `user_data` where email='$email' && password='$hash_check'";
 	$result = $con -> query($sql);
 	$rows = $result->num_rows;
 	if($rows == 1)

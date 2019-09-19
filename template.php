@@ -270,7 +270,7 @@
 	{
 ?>
 	<script type="text/javascript">
-		signup_toggle();
+		login_toggle();
 	</script>
 <?php
 $_SESSION['user_exists'] = 0; 
