@@ -9,6 +9,7 @@
 	if($rows == 1)
 	{
 		$_SESSION['is_logged_in'] = 1;
+		$_SESSION['logged_in_user'] = $email;
 	}
 	else
 	{

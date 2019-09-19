@@ -38,21 +38,26 @@
 		<div class="container" style="">
 	 		<a class="navbar-brand" href="#">Gallery_Name</a>
 	 		<ul class="navbar-nav">	
-	 			<li class="nav-item">
-	 				<a href="#" class="nav-link">Gallery</a>
-	 			</li>
-	 			<li class="nav-item">
-	 				<a href="#" class="nav-link" id="LogIN"><i class="fab fa-adn"></i>LogIN</a>
-	 			</li>
-	 			<li class="nav-item">
-	 				<a href="#" class="nav-link" id="SignUP"><i class="fas fa-user-plus"></i>SignUP</a>
-	 			</li>
 	 			<?php 
 	 				if (isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'])
 	 				{
 	 					?>
 	 					<li class="nav-item">
+	 						<a href="profile.php" class="nav-link">My Gallery</a>
+	 					</li>
+	 					<li class="nav-item">
 	 						<a href="logout.php" class="nav-link" id="SignUP"><i class="fas fa-user-plus"></i>Logout!</a>
+	 					</li>
+	 					<?php
+	 				}
+	 				else
+	 				{
+	 					?>
+	 					<li class="nav-item">
+	 						<a href="#" class="nav-link" id="LogIN"><i class="fab fa-adn"></i>LogIN</a>
+	 					</li>
+	 					<li class="nav-item">
+	 						<a href="#" class="nav-link" id="SignUP"><i class="fas fa-user-plus"></i>SignUP</a>
 	 					</li>
 	 					<?php
 	 				}
@@ -130,151 +135,44 @@
 	<div class="container">
 		<div class="row">
 			<!-- STARTING OF ONE PIC -->
-			<div class="col-lg-4 col-md-6">
-				<div class="hovereffect img-thumbnail">
-				    <img src="https://i.imgur.com/CO79hsR.png" width="100%">
-				    <div class="overlay">
-		                <h2 style="opacity: 0">Hover effect 8</h2>
-		                <p class="set1">
-		                    <a href="#"><i class="fa fa-twitter"></i></a>
-		                    <a href="#"><i class="fa fa-facebook"></i></a>
-		                </p>
-		                <hr>
-		                <hr>
-		                <p class="set2">
-		                    <a href="#"><i class="fa fa-instagram"></i></a>
-		                    <a href="#"><i class="fa fa-dribbble"></i></a>
-		                </p>
-		            </div>
-    			</div>
-			</div>
-			<!-- ENDING OF ONE PIC -->
-
-			<!-- STARTING OF ONE PIC -->
-			<div class="col-lg-4 col-md-6">
-				<div class="hovereffect img-thumbnail">
-				    <img src="https://i.imgur.com/2F3Al82.jpg" width="100%">
-				    <div class="overlay">
-		                <h2 style="opacity: 0">Hover effect 8</h2>
-		                <p class="set1">
-		                    <a href="#"><i class="fa fa-twitter"></i></a>
-		                    <a href="#"><i class="fa fa-facebook"></i></a>
-		                </p>
-		                <hr>
-		                <hr>
-		                <p class="set2">
-		                    <a href="#"><i class="fa fa-instagram"></i></a>
-		                    <a href="#"><i class="fa fa-dribbble"></i></a>
-		                </p>
-		            </div>
-    			</div>
-			</div>
-			<!-- ENDING OF ONE PIC -->
-
-			<!-- STARTING OF ONE PIC -->
-			<div class="col-lg-4 col-md-6">
-				<div class="hovereffect img-thumbnail">
-				    <img src="https://i.imgur.com/Gh4LZnk.png" width="100%">
-				    <div class="overlay">
-		                <h2 style="opacity: 0">Hover effect 8</h2>
-		                <p class="set1">
-		                    <a href="#"><i class="fa fa-twitter"></i></a>
-		                    <a href="#"><i class="fa fa-facebook"></i></a>
-		                </p>
-		                <hr>
-		                <hr>
-		                <p class="set2">
-		                    <a href="#"><i class="fa fa-instagram"></i></a>
-		                    <a href="#"><i class="fa fa-dribbble"></i></a>
-		                </p>
-		            </div>
-    			</div>
-			</div>
-			<!-- ENDING OF ONE PIC -->
-
-			<!-- STARTING OF ONE PIC -->
-			<div class="col-lg-4 col-md-6">
-				<div class="hovereffect img-thumbnail">
-				    <img src="https://i.imgur.com/aUhpEz3.jpg" width="100%">
-				    <div class="overlay">
-		                <h2 style="opacity: 0">Hover effect 8</h2>
-		                <p class="set1">
-		                    <a href="#"><i class="fa fa-twitter"></i></a>
-		                    <a href="#"><i class="fa fa-facebook"></i></a>
-		                </p>
-		                <hr>
-		                <hr>
-		                <p class="set2">
-		                    <a href="#"><i class="fa fa-instagram"></i></a>
-		                    <a href="#"><i class="fa fa-dribbble"></i></a>
-		                </p>
-		            </div>
-    			</div>
-			</div>
-			<!-- ENDING OF ONE PIC -->
-
-			<!-- STARTING OF ONE PIC -->
-			<div class="col-lg-4 col-md-6">
-				<div class="hovereffect img-thumbnail">
-				    <img src="https://i.imgur.com/qqFsein.jpg" width="100%">
-				    <div class="overlay">
-		                <h2 style="opacity: 0">Hover effect 8</h2>
-		                <p class="set1">
-		                    <a href="#"><i class="fa fa-twitter"></i></a>
-		                    <a href="#"><i class="fa fa-facebook"></i></a>
-		                </p>
-		                <hr>
-		                <hr>
-		                <p class="set2">
-		                    <a href="#"><i class="fa fa-instagram"></i></a>
-		                    <a href="#"><i class="fa fa-dribbble"></i></a>
-		                </p>
-		            </div>
-    			</div>
-			</div>
-			<!-- ENDING OF ONE PIC -->	
-
-			<!-- STARTING OF ONE PIC -->
-			<div class="col-lg-4 col-md-6">
-				<div class="hovereffect img-thumbnail">
-				    <img src="https://i.imgur.com/lhZoAOv.jpg" width="100%">
-				    <div class="overlay">
-		                <h2 style="opacity: 0">Hover effect 8</h2>
-		                <p class="set1">
-		                    <a href="#"><i class="fa fa-twitter"></i></a>
-		                    <a href="#"><i class="fa fa-facebook"></i></a>
-		                </p>
-		                <hr>
-		                <hr>
-		                <p class="set2">
-		                    <a href="#"><i class="fa fa-instagram"></i></a>
-		                    <a href="#"><i class="fa fa-dribbble"></i></a>
-		                </p>
-		            </div>
-    			</div>
-			</div>
-			<!-- ENDING OF ONE PIC -->	
-
-			<!-- STARTING OF ONE PIC -->
-			<div class="col-lg-4 col-md-6">
-				<div class="hovereffect img-thumbnail">
-				    <img src="https://i.imgur.com/Oaq0eip.jpg" width="100%">
-				    <div class="overlay">
-		                <h2 style="opacity: 0">Hover effect 8</h2>
-		                <p class="set1">
-		                    <a href="#"><i class="fa fa-twitter"></i></a>
-		                    <a href="#"><i class="fa fa-facebook"></i></a>
-		                </p>
-		                <hr>
-		                <hr>
-		                <p class="set2">
-		                    <a href="#"><i class="fa fa-instagram"></i></a>
-		                    <a href="#"><i class="fa fa-dribbble"></i></a>
-		                </p>
-		            </div>
-    			</div>
-			</div>
-			<!-- ENDING OF ONE PIC -->	
+			<?php 
+				require './includes/db_info.php';
+				$select_sql = "select * from `image_db`";
+				$result = $con -> query($select_sql);
+				if($result->num_rows > 0)
+				{
+					while($row = $result->fetch_assoc())
+					{
+						?>
+						<div class="col-lg-4 col-md-6">
+							<div class="hovereffect img-thumbnail">
+						    <img src="<?php echo $row['image_link'];?>" width="100%">
+						    <div class="overlay">
+				                <h2 style="opacity: 0">Hover effect 8</h2>
+				                <p class="set1">
+				                    <a href="#"><i class="fa fa-twitter"></i></a>
+				                    <a href="#"><i class="fa fa-facebook"></i></a>
+				                </p>
+				                <hr>
+				                <hr>
+				                <p class="set2">
+				                    <a href="#"><i class="fa fa-instagram"></i></a>
+				                    <a href="#"><i class="fa fa-dribbble"></i></a>
+				                </p>
+				            </div>
+		    			</div>
+					</div>
+					<!-- ENDING OF ONE PIC -->
+						<?php
+					}
+				}
+				else
+				{
+					?>
+					<p>No Image Uploaded</p>
+					<?php
+				}
+			?>
 
 		</div>
 	</div>
@@ -331,7 +229,6 @@
 		alert("Login Successful");
 	</script>
 <?php
- 	$_SESSION['is_logged_in'] = 0;
 	}
 	elseif (isset($_SESSION['login_error']) && $_SESSION['login_error']) 
 	{
