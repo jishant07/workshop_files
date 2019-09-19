@@ -4,7 +4,7 @@
 	<title>My Gallery</title>
 
 	<!-- Link to TEMPLATE CSS file -->
-	<link rel="stylesheet" type="text/css" href="css/template.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="css/template.css"> -->
     <!-- Viewport Settings -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Link to SPINNER CSS file file -->
