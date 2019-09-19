@@ -58,22 +58,22 @@
     	<!-- Added a new class to ul named 'uls' and changed height of all imgs-->
         <ul class="uls">
             <li data-flip-title="Red">
-                <img src="img_b/image.svg" id="html_section" style="height: 550px;">
+                <img src="img_b/html-5.svg" id="html_section" style="height: 550px;">
             </li>
             <li data-flip-title="Razzmatazz" data-flip-category="Purples">
-                <img src="img_b/css.png" id="css_section" style="height: 550px;">
+                <img src="img_b/css-5.svg" id="css_section" style="height: 550px;">
              </li>
             <li data-flip-title="Deep Lilac" data-flip-category="Purples" style="padding-bottom: 10px;">
-                <img src="img_b/bootstrap.png" id="bootstrap_section" style="height: 550px;">
+                <img src="img_b/Bootstrap.svg" id="bootstrap_section" style="height: 550px;">
             </li>
             <li data-flip-title="Daisy Bush" data-flip-category="Purples">
-                <img src="img_b/js.png" id="javascript_section" style="height: 550px;">
+                <img src="img_b/Javascript.svg" id="javascript_section" style="height: 550px;">
             </li>
             <li data-flip-title="Cerulean Blue" data-flip-category="Blues">
-                <img src="img_b/jq.png" id="jquery_section" style="height: 550px;">
+                <img src="img_b/PHP.svg" id="jquery_section" style="height: 550px;">
             </li>
             <li data-flip-title="Cerulean Blue" data-flip-category="Blues">
-                <img src="img/text6.gif" id="php_section" style="height: 550px;">
+                <img src="img_b/SQL.svg" id="php_section" style="height: 550px;">
             </li>
         </ul>
     </div>
