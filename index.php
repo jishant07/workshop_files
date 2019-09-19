@@ -53,7 +53,7 @@
 
        .jumbotron
        {	
- 			width: 1170px;
+ 			width: 70%;
        }
 
        .heading_content
