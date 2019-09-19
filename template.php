@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,11 +42,21 @@
 	 				<a href="#" class="nav-link">Gallery</a>
 	 			</li>
 	 			<li class="nav-item">
-	 				<a class="nav-link" id="LogIN"><i class="fab fa-adn"></i>LogIN</a>
+	 				<a href="#" class="nav-link" id="LogIN"><i class="fab fa-adn"></i>LogIN</a>
 	 			</li>
 	 			<li class="nav-item">
-	 				<a class="nav-link" id="SignUP"><i class="fas fa-user-plus"></i>SignUP</a>
+	 				<a href="#" class="nav-link" id="SignUP"><i class="fas fa-user-plus"></i>SignUP</a>
 	 			</li>
+	 			<?php 
+	 				if (isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'])
+	 				{
+	 					?>
+	 					<li class="nav-item">
+	 						<a href="logout.php" class="nav-link" id="SignUP"><i class="fas fa-user-plus"></i>Logout!</a>
+	 					</li>
+	 					<?php
+	 				}
+	 			?>
 	 		</ul>
 	 	</div>
 	</nav>
@@ -55,7 +66,7 @@
 			<form class="form-group" action="user_check.php" method="POST">
 				<div class="row">
 					<div class="col-lg-6 mb-5">
-						<input type="text" class="form-control" ame="username" required placeholder="Enter the Username">
+						<input type="email" class="form-control" name="email" required placeholder="Enter the Username">
 					</div>
 				<br>
 				<div class="col-lg-6 mb-5">
@@ -98,8 +109,8 @@
 					<label>FaceBook </label>
 					<input type="text" name="fb" placeholder="abcd_xyz" required>
 				</div>
+				<button class="btn btn-primary" id="submit-signup">Sign Up</button>
 			</form>
-			<button class="btn btn-primary" id="submit-signup">Sign Up</button>
 		</div>
 		<br>
 	</div>
@@ -268,40 +279,9 @@
 		</div>
 	</div>
 	</div>
-</body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="js/template.js"></script>
-
-<!-- 	//////////////////////////////////////////////////////////////////////////////////////
-						SCRIPT FOR PRE PAGE LOADER 
-	////////////////////////////////////////////////////////////////////////////////////// -->
-
-<script type="text/javascript">
-	$(window).on('load',function() {
-		$("body").css("overflow","hidden");
-		$(".loader").delay(2000).fadeOut("slow");
-	  	$("#overlayer").delay(2000).fadeOut("slow", function(){$("body").css("overflow","auto");});	
-	});
-</script>
-
-<!-- 	//////////////////////////////////////////////////////////////////////////////////////
-						SCRIPT FOR TOP SCROLL ON REFRESH
-	////////////////////////////////////////////////////////////////////////////////////// -->
-
-<script type="text/javascript">
-	$(window).on('beforeunload', function(){
-  	$(window).scrollTop(0);
-});
-</script>
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////
-						THE TOGGLE SCRIPT
-	////////////////////////////////////////////////////////////////////////////////////// -->
-<script type="text/javascript">
-	var login = 0;
-	var signup = 0;
-	$(document).ready(function()
-	{
+	<script type="text/javascript">
+		var login = 0;
+		var signup = 0;
 		function login_toggle()
 		{
 			if(signup)
@@ -322,26 +302,100 @@
 			$('#signup').slideToggle(300);
 			signup = 1;
 		}
+	</script>
+	<!-- Signup Alerts Display -->
+<?php 
+	if(isset($_SESSION['user_exists']) && $_SESSION['user_exists'])
+	{
+?>
+	<script type="text/javascript">
+		alert("The user already exists");
+	</script>
+<?php
+	}
+	elseif (isset($_SESSION['user_added']) && $_SESSION['user_added']) 
+	{
+?>
+	<script type="text/javascript">
+		alert("User was added successfully");
+	</script>
+<?php
+	}
+?>
+<!-- Signin Alerts Display -->
+<?php 
+	if(isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'])
+	{
+?>
+	<script type="text/javascript">
+		alert("Login Successful");
+	</script>
+<?php
+ 	
+	}
+	elseif (isset($_SESSION['login_error']) && $_SESSION['login_error']) 
+	{
+?>
+	<script type="text/javascript">
+		alert("Wrong Credentials");
+	</script>
+<?php
+	
+	}
+?>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+
+<!-- 	//////////////////////////////////////////////////////////////////////////////////////
+						SCRIPT FOR PRE PAGE LOADER 
+	////////////////////////////////////////////////////////////////////////////////////// -->
+<script type="text/javascript">
+	$(window).on('load',function() {
+		$("body").css("overflow","hidden");
+		$(".loader").delay(2000).fadeOut("slow");
+	  	$("#overlayer").delay(2000).fadeOut("slow", function(){$("body").css("overflow","auto");});	
+	});
+</script>
+
+<!-- 	//////////////////////////////////////////////////////////////////////////////////////
+						SCRIPT FOR TOP SCROLL ON REFRESH
+	////////////////////////////////////////////////////////////////////////////////////// -->
+
+<script type="text/javascript">
+	$(window).on('beforeunload', function(){
+  	$(window).scrollTop(0);
+});
+</script>
+ <!-- Toggle According to the session  -->
+<?php 
+	if(isset($_SESSION['user_exists']) && $_SESSION['user_exists'])
+	{
+?>
+	<script type="text/javascript">
+		signup_toggle();
+	</script>
+<?php
+$_SESSION['user_exists'] = 0; 
+	}
+	elseif (isset($_SESSION['user_added']) && $_SESSION['user_added']) 
+	{
+?>
+	<script type="text/javascript">
+		login_toggle();
+	</script>
+<?php 
+$_SESSION['user_added'] = 0;
+	} 
+?>
+<!-- //////////////////////////////////////////////////////////////////////////////////////
+						THE TOGGLE SCRIPT
+	////////////////////////////////////////////////////////////////////////////////////// -->
+<script type="text/javascript">
+	$(document).ready(function()
+	{
 		$('#LogIN').on("click",login_toggle);
 		$('#SignUP').on("click",signup_toggle);
-		$('#submit-signup').click(function()
-		{
-			var formData = $('#signup_form').serialize();
-			$.ajax({
-				url : "add_user.php",
-				method : "post",
-				data : formData,
-				success : function()
-				{
-					alert("User added successfully");
-					login_toggle();
-				},
-				error : function()
-				{
-					alert("Some error occured");
-				}
-			})
-		});
 	});
 </script>
 </html>
