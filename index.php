@@ -36,8 +36,8 @@
 
         ul li img
         {
-        	margin: 50px;
-        	height: 600px;
+        	margin: 55px;
+        	height: 70vh;
         }
 
         body
