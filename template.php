@@ -41,10 +41,10 @@
 	 				<a href="#" class="nav-link">Gallery</a>
 	 			</li>
 	 			<li class="nav-item">
-	 				<a href="#" class="nav-link" id="LogIN"><i class="fab fa-adn"></i>LogIN</a>
+	 				<a class="nav-link" id="LogIN"><i class="fab fa-adn"></i>LogIN</a>
 	 			</li>
 	 			<li class="nav-item">
-	 				<a href="#" class="nav-link" id="SignUP"><i class="fas fa-user-plus"></i>SignUP</a>
+	 				<a class="nav-link" id="SignUP"><i class="fas fa-user-plus"></i>SignUP</a>
 	 			</li>
 	 		</ul>
 	 	</div>
@@ -69,7 +69,37 @@
 	<div class="container abc" id="signup" style="display:none;">
 		<br>
 		<div class="jumbotron">
-			<h1>Sign Up Form</h1>
+			<form action="add_user.php" method="POST" class="form-group" id="signup_form">
+				<div class="form-control">
+					<label>First Name</label>
+					<input type="text" name="fname" placeholder="Enter First Name" required>
+				</div>
+				<div class="form-control">
+					<label>Last Name</label>
+					<input type="text" name="lname" placeholder="Enter Last Name" required>
+				</div>
+				<div class="form-control">
+					<label>Email</label>
+					<input type="email" name="email" placeholder="Enter E-Mail" required>
+				</div>
+				<div class="form-control">
+					<label>Password</label>
+					<input type="password" name="pwd" placeholder="***********" required>
+				</div>
+				<div class="form-control">
+					<label>Instagram Handle</label>
+					<input type="text" name="insta" placeholder="abcd_xyz" required>
+				</div>
+				<div class="form-control">
+					<label>Twitter Handle</label>
+					<input type="text" name="twitter" placeholder="abcd_xyz" required>
+				</div>
+				<div class="form-control">
+					<label>FaceBook </label>
+					<input type="text" name="fb" placeholder="abcd_xyz" required>
+				</div>
+			</form>
+			<button class="btn btn-primary" id="submit-signup">Sign Up</button>
 		</div>
 		<br>
 	</div>
@@ -263,12 +293,16 @@
   	$(window).scrollTop(0);
 });
 </script>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////
+						THE TOGGLE SCRIPT
+	////////////////////////////////////////////////////////////////////////////////////// -->
 <script type="text/javascript">
 	var login = 0;
 	var signup = 0;
 	$(document).ready(function()
 	{
-		$('#LogIN').on("click",function()
+		function login_toggle()
 		{
 			if(signup)
 			{
@@ -277,8 +311,8 @@
 			}
 			$('#login').slideToggle(300);
 			login = 1;
-		});
-		$('#SignUP').on("click",function()
+		}		
+		function signup_toggle()
 		{
 			if(login)
 			{
@@ -287,6 +321,26 @@
 			}
 			$('#signup').slideToggle(300);
 			signup = 1;
+		}
+		$('#LogIN').on("click",login_toggle);
+		$('#SignUP').on("click",signup_toggle);
+		$('#submit-signup').click(function()
+		{
+			var formData = $('#signup_form').serialize();
+			$.ajax({
+				url : "add_user.php",
+				method : "post",
+				data : formData,
+				success : function()
+				{
+					alert("User added successfully");
+					login_toggle();
+				},
+				error : function()
+				{
+					alert("Some error occured");
+				}
+			})
 		});
 	});
 </script>
