@@ -5,7 +5,7 @@
 	<title>My Gallery</title>
 
 	<!-- Link to TEMPLATE CSS file -->
-<!-- 	<link rel="stylesheet" type="text/css" href="css/template.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/template.css">
     <!-- Viewport Settings -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Link to SPINNER CSS file file -->
@@ -19,6 +19,27 @@
 
 	<!-- FONT AWESOME CDN -->
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+	<style type="text/css">
+		.form-row
+		{
+			margin: 10px 0;
+		}
+
+		.nav-item
+		{
+			/*border: 1px solid grey;*/
+			padding: 0 5px;
+		}
+
+		.nav-item:hover
+		{
+			background-color: grey;
+			margin: 0;
+		}
+	</style>
 </head>
 <body>
 
@@ -36,7 +57,7 @@
 	<div id="main">
 	<nav class="navbar navbar-expand navbar-light bg-light">
 		<div class="container" style="">
-	 		<a class="navbar-brand" href="#">Gallery_Name</a>
+	 		<a class="navbar-brand" href="template.php">Gallery_Name</a>
 	 		<ul class="navbar-nav">	
 	 			<?php 
 	 				if (isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'])
@@ -46,7 +67,7 @@
 	 						<a href="profile.php" class="nav-link">My Gallery</a>
 	 					</li>
 	 					<li class="nav-item">
-	 						<a href="logout.php" class="nav-link" id="SignUP"><i class="fas fa-user-plus"></i>Logout!</a>
+	 						<a href="logout.php" class="nav-link" id="SignUP">Logout</a>
 	 					</li>
 	 					<?php
 	 				}
@@ -54,10 +75,11 @@
 	 				{
 	 					?>
 	 					<li class="nav-item">
-	 						<a href="#" class="nav-link" id="LogIN"><i class="fab fa-adn"></i>LogIN</a>
+	 						<a href="#" class="nav-link" id="LogIN">LogIN</a>
 	 					</li>
 	 					<li class="nav-item">
-	 						<a href="#" class="nav-link" id="SignUP"><i class="fas fa-user-plus"></i>SignUP</a>
+	 						<a href="#" class="nav-link" id="SignUP">SignUP</a>
+
 	 					</li>
 	 					<?php
 	 				}
@@ -71,14 +93,16 @@
 			<form class="form-group" action="user_check.php" method="POST">
 				<div class="row">
 					<div class="col-lg-6 mb-5">
-						<input type="email" class="form-control" name="email" required placeholder="Enter the Username">
+						<label>Email</label>
+						<input type="email" class="form-control" name="email" required placeholder="Email">
 					</div>
 				<br>
 				<div class="col-lg-6 mb-5">
-					<input type="password" class="form-control" name="pwd" required placeholder="Enter the Password">
+					<label>Password</label>
+					<input type="password" class="form-control" name="pwd" required placeholder="Password">
 				</div>
 				</div>	
-				<button class="btn btn-primary">Submit</button>
+				<button class="btn btn-primary" style="float: right;">Submit</button>
 			</form>
 		</div>
 	</div>
@@ -86,35 +110,63 @@
 		<br>
 		<div class="jumbotron">
 			<form action="add_user.php" method="POST" class="form-group" id="signup_form">
-				<div class="form-control">
-					<label>First Name</label>
-					<input type="text" name="fname" placeholder="Enter First Name" required>
-				</div>
-				<div class="form-control">
-					<label>Last Name</label>
-					<input type="text" name="lname" placeholder="Enter Last Name" required>
-				</div>
-				<div class="form-control">
-					<label>Email</label>
-					<input type="email" name="email" placeholder="Enter E-Mail" required>
-				</div>
-				<div class="form-control">
-					<label>Password</label>
-					<input type="password" name="pwd" placeholder="***********" required>
-				</div>
-				<div class="form-control">
-					<label>Instagram Handle</label>
-					<input type="text" name="insta" placeholder="abcd_xyz" required>
-				</div>
-				<div class="form-control">
-					<label>Twitter Handle</label>
-					<input type="text" name="twitter" placeholder="abcd_xyz" required>
-				</div>
-				<div class="form-control">
-					<label>FaceBook </label>
-					<input type="text" name="fb" placeholder="abcd_xyz" required>
-				</div>
-				<button class="btn btn-primary" id="submit-signup">Sign Up</button>
+				<div class="form-row">
+					<div class="col">
+						<label>First Name</label>
+						<input type="text" name="fname" class="form-control" placeholder="First Name" required>
+					</div>
+					<div class="col">
+						<label>Last Name</label>
+						<input type="text" name="lname" class="form-control" placeholder="Last Name" required>
+					</div>
+ 				</div>
+ 				<div class="form-row">
+ 					<div class="col">
+ 						<label>Email</label>
+						<input type="email" name="email" class="form-control" placeholder="E-Mail" required>
+ 					</div>
+ 					<div class="col">
+ 						<label>Password</label>
+						<input type="password" name="pwd" class="form-control" placeholder="Password" required>
+ 					</div>
+ 				</div>
+				<div class="form-row">
+					<div class="col-md-3">
+						
+					</div>
+					<div class="col-md-6">
+						<label>Instagram Handle</label>
+						<input type="text" name="insta" class="form-control" placeholder="Link to Instagram" required>
+					</div>
+					<div class="col-md-3">
+						
+					</div>	
+				</div>	
+				<div class="form-row">
+					<div class="col-md-3">
+						
+					</div>
+					<div class="col-md-6">
+						<label>Twitter Handle</label>
+						<input type="text" name="twitter" class="form-control" placeholder="Link to Twitter" required>
+					</div>
+					<div class="col-md-3">
+						
+					</div>	
+				</div>	
+				<div class="form-row">
+					<div class="col-md-3">
+						
+					</div>
+					<div class="col-md-6">
+						<label>FaceBook </label>
+					<input type="text" name="fb" class="form-control" placeholder="Link to FaceBook" required>
+					</div>
+					<div class="col-md-3">
+						
+					</div>	
+				</div>				
+				<button class="btn btn-primary" id="submit-signup" style="float: right;">Sign Up</button>
 			</form>
 		</div>
 		<br>
