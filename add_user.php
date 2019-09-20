@@ -17,4 +17,4 @@
 		$_SESSION['user_added'] = 1;
 	}
 	header("Location:template.php");
-?>	
+?>
