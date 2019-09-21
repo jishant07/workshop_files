@@ -45,10 +45,18 @@
         	background: #062639;
         }
 
-        p, .heading
+        .heading
         {
+        	margin-top: 20px;
         	text-align: center;
-        	vertical-align: middle;
+        }
+
+        .extra_div
+        {
+        	margin-top: 20px;
+        	height: 77.5vh;
+        	display: flex;
+        	align-items: center;
         }
 
        .jumbotron
@@ -58,9 +66,32 @@
 
        .heading_content
        {
-       		height: 400px;
+       		height: 50vh;
+       		/*display: flex;
+       		align-items: center;*/
        }
 
+       .mid
+       {
+       		display: block;
+       		width: 100%;
+       		text-align: center;
+       }
+
+       h1
+       {
+       		font-size: 7vh;
+       }
+
+       li
+       {
+       	font-size: 3vh;
+       }
+
+       .hybrid
+       {
+       		font-size: 1.2vw;
+       }
     </style>
 </head>
 <body>
@@ -101,9 +132,46 @@
 <div id="html_info" style="display: none;">
     <button class="back">Back</button>
     <div class="owl-carousel owl-theme owl-stage nonloop">
+
     	<!-- /////////////////////////////////////////////////////////////////////////////// 
+											DIVS FOR SINGLE PAGE CENTER HEADING
+    		/////////////////////////////////////////////////////////////////////////////// -->
+
+    	<!-- <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">!!!   ENTER TEXT HERE   !!!</p>
+     			</div>
+            </div>
+        </div> -->
+
+        <!-- /////////////////////////////////////////////////////////////////////////////// 
+											DIVS FOR HEADING + CONTENT
+    		/////////////////////////////////////////////////////////////////////////////// -->
+
+        <!-- <div class="item">
+        	<div class="heading jumbotron">
+        		<h1>CSS 5</h1>
+        	</div>
+            <div class="heading_content jumbotron lead">
+     			!!!   ENTER TEXT HERE   !!!
+            </div>
+        </div> -->
+
+        <!-- /////////////////////////////////////////////////////////////////////////////// 
+											DIVS FOR EXTRA PAGES
+    		/////////////////////////////////////////////////////////////////////////////// -->
+
+        <!-- <div class="item">
+            <div class="extra_div jumbotron lead">
+     			!!!   ENTER YOUR CONTENT HERE   !!!
+            </div>
+        </div> -->
+
+        <!-- /////////////////////////////////////////////////////////////////////////////// 
 											HTML SECTION
     		/////////////////////////////////////////////////////////////////////////////// -->
+
         <div class="item">
         	<div class="heading jumbotron">
         		<h1>HTML 1</h1>
@@ -191,68 +259,229 @@
 											CSS SECTION
     		/////////////////////////////////////////////////////////////////////////////// -->
         <div class="item">
+        	<div class="jumbotron extra_div">
+      			<div class="mid">
+      				<p class="display-1">CSS</p>
+      			</div>
+        	</div>
+        </div>
+        <div class="item">
             <div class="heading jumbotron">
-        		<h1>CSS 1</h1>
+        		<h1>What is CSS?</h1>
         	</div>
             <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            	<p>
+            		<ul>
+            			<li>CSS stands for Cascading Style Sheets</li>
+            			<li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+            			<li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+            		</ul>
+            	</p>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+            	<div class="mid">
+            		<p class="display-1">Why do we use CSS?</p>
+            	</div>
             </div>
         </div>
         <div class="item">
         	<div class="heading jumbotron">
-        		<h1>CSS 2</h1>
+        		<h1>Types of CSS</h1>
         	</div>
             <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            		<ul>
+	            		<li>External CSS (Stored in .CSS file)</li>
+	            		<li>Internal CSS (Stored in same file under head using style tag)</li>
+	            		<li>In-Line CSS (Uses style tag right after an element)</li>
+	            	</ul>
             </div>
         </div>
         <div class="item">
         	<div class="heading jumbotron">
-        		<h1>CSS 3</h1>
+        		<h1>General Synatx</h1>
         	</div>
             <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            	<img src="img_b/selector.gif">
+            </div>
+        </div>
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">How do we access CSS elements?</p>
+     			</div>
             </div>
         </div>
         <div class="item">
         	<div class="heading jumbotron">
-        		<h1>CSS 4</h1>
+        		<h1>SELECTORS</h1>
         	</div>
-            <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="heading_content jumbotron lead hybrid">
+     			<p style="display: inline-block;">
+     				<strong style="font-size: 1.3vw">1. Element Selector</strong>
+     				<br>
+     				<br>
+     				Synatx :
+     				<br>
+     				Element_tag { Declaration }
+     				<br>
+     				<br>
+     				Example :
+     				<br>
+     				p { color : blue; }
+     			</p>
+     			<p style="display: inline-block; margin-left: 5%;">
+     				<strong  style="font-size: 1.3vw">2. ID Selector</strong>
+     				<br>
+     				<br>
+     				Syntax :
+     				<br>
+     				#ID_name { Declaration }
+     				<br>
+     				<br>
+     				Example :
+     				<br>
+     				#myDiv { color : blue; }
+     			</p>
+     			<p style="display: inline-block; margin-left: 5%;">
+     				<strong  style="font-size: 1.3vw">3. Class Selector</strong>
+     				<br>
+     				<br>
+     				Syntax : 
+     				<br>
+     				.Class_name { Declaration }
+     				<br>
+     				<br>
+     				Example :
+     				<br>
+     				.myDiv { color : blue; }
+     			</p>
+     			<p style="display: inline-block; margin-left: 5%;">
+     				<strong  style="font-size: 1.3vw">4. Universal Selector</strong>
+     				
+     				<br>
+     				<br>
+     				Syntax : 
+     				<br>
+     				* { Declaration }
+     				<br>
+     				<br>
+     				Example :
+     				<br>
+     				* { color : blue; }
+     			</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">CSS SPECIFICITY</p>
+     				<p class="display-4">Inline > IDs > Class > Elements</p>
+     			</div>
             </div>
         </div>
         <div class="item">
         	<div class="heading jumbotron">
-        		<h1>CSS 5</h1>
+        		<h1>COLOR</h1>
         	</div>
             <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     			<ul style="width: 70%; margin-left: 10%;">
+     				<li style="background-color: DodgerBlue;">1. CSS Background Color <span style="float: right;">background-color : DodgerBlue</span></li>
+     				<li style="color: tomato;">2. CSS Text Color <span style="float: right;">color : tomato</span></li>
+     				<li style="color: rgb(30,144,255)">3. CSS RGB Values <span style="float: right;">color : rgb(30, 144, 255)</span></li>
+     				<li style="color: rgba(255, 99, 71, 0.5)">4. CSS RGBalpha Values <span style="float: right;">color : rgba(255, 99, 71, 0.5)</span></li>
+     				<li>5. CSS HEX Values <span style="float: right;">color : #000000</span></li>
+     			</ul>
+            </div>
+        </div>
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">BOX MODEL</p>
+     			</div>
+            </div>
+        </div>
+        <div class="item">
+        	<div class="heading jumbotron">
+        		<h1>BORDERS</h1>
+        	</div>
+            <div class="heading_content jumbotron lead hybrid">
+            	<p>
+            		Syntax : border : (width) (border-style) (color);
+            		<br>
+            		Example : border : 1px solid grey;
+            	</p>
+     			<div style="text-align: center; border: 1px solid grey; width: 100%;">
+     				<p>Border of width 1px with 'solid' style and grey color</p>
+     			</div>
+     			<p>
+     				Border radius attribute : border-radius : 5px;
+     			</p>
+     			<div style="text-align: center; border: 1px solid grey; border-radius: 5px; width: 100%;">
+     				<p>Border of width 1px with 'solid' style, rounded corners and grey color</p>
+     			</div>
+            </div>
+        </div>
+        <div class="item">
+        	<div class="heading jumbotron">
+        		<h1>MARGIN</h1>
+        	</div>
+            <div class="heading_content jumbotron lead hybrid">
+     			<p>Margins are used to seprate elements</p>
+     			<div style="width: 30vw; height: 5vh; background-color: tomato; display: inline-block; margin: 10px;text-align: center;">margin : 10px;</div>
+     			<div style="width: 30vw; height: 5vh; background-color: tomato; display: inline-block; margin: 10px;text-align: center;">margin : 10px;</div>
+     			<p>
+     				Syntax : <br>
+     				margin : 10px;<br>
+     				margin-(x) : 10px;<br>
+     				X can be top, bottom, right, left <br>	
+     				margin : 10px 20px 30px 40px;<br>
+     				margin : 10px 20px;
+     			</p>
+            </div>
+        </div>
+        <div class="item">
+        	<div class="heading jumbotron">
+        		<h1>PADDING</h1>
+        	</div>
+            <div class="heading_content jumbotron lead">
+     			<p>
+     				Padding Follows same properties as of Margin <br>
+     				<br>
+     				The CSS padding properties are used to generate space around an element's content, inside of any defined borders. <br>
+     				<br>
+					With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left)
+     			</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">CSS UNITS</p>
+     			</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">CSS TEXT & FONTS</p>
+     			</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">CSS POSITIONS</p>
+     			</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">CSS PSEUDO	- CLASS</p>
+     			</div>
             </div>
         </div>
     </div>
