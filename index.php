@@ -195,7 +195,7 @@
         	</div>
             <div class="heading_content jumbotron lead">
             	<p class="align-middle">To create actual content of the page such as written text,or taking inputs from the user etc..  It basically defines the structure and content of  a page.</p>
-                <p><a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit">layout</a> </p>
+                <p><a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit?usp=sharing">layout</a> </p>
             </div>
         </div>
         <div class="item">
@@ -206,7 +206,7 @@
             	
                 <li>A tag is a special word or letter surrounded by angle brackets, < and >.</li>
                 <li> Let’s say it have a predefined meaning,which tells the browser how the contents within the tag is  to be treated as</li>
-                <li><a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit"><span>Syntax and Example</span></a></li>
+                <li><a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit?usp=sharing"><span>Syntax and Example</span></a></li>
                 <br>
                 <li><span>Note:</span>Some tags do not have end tags</li>
             </div>
@@ -384,7 +384,7 @@
                <LI> HUMAYUN'S TOMB</LI>
                <LI>INDIA GATE</LI>
              </UL>
-               <li>Try this yourself:<a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit">image</a></li>
+               <li>Try this yourself:<a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit?usp=sharing">image</a></li>
             </div>
         </div>
 
@@ -397,10 +397,10 @@
                    <li>Attributes:​border,width,height    </li>
                    <li><span>th</span> Defines table head  <span>tr</span> Defines table row  <span>td</span> Defines table cell  </li>
                    <li><span>rowspan,colspan</span> are two attributes of the'th'tag.</li>
-                   <li>Try:<a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit"> Image</a><br>
+                   <li>Try:<a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit?usp=sharing"> Image</a><br>
                    <br>
                    <li>The <strong>tbody</strong> element is used in conjunction with the ​<span>thead</span> and ​<span>tfoot</span>​ elements to specify each  part of a table (body, header, footer). </li>
-                  <li> Eg:<a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit">Image</a></li>
+                  <li> Eg:<a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit?usp=sharing">Image</a></li>
                 </div>
             </div>
         </div>
@@ -411,7 +411,7 @@
                    14)FORM
                    <li>It used to create an html form.  </li>
                    <li>Various elements of a form:  1]label 2]input 3]button</li>
-                   <li><a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit">Image</a></li>    
+                   <li><a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit?usp=sharing">Image</a></li>    
                    <br>
                    <li><span>label</span>  This tag defines a label for the input or button 
                    <p> <strong>Attributes:</strong>for</li></p><br>
