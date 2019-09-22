@@ -92,6 +92,11 @@
        {
        		font-size: 1.2vw;
        }
+
+       span{
+        font-weight: bold;
+        color:blue;
+       }
     </style>
 </head>
 <body>
@@ -174,82 +179,261 @@
 
         <div class="item">
         	<div class="heading jumbotron">
-        		<h1>HTML 1</h1>
+        		<h1>1)WHAT IS HTML? </h1>
         	</div>
             <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            	<p class="align-middle">
+                 <li> <span>H</span>yper<span>t</span>ext <span>M</span>arkup <span>L</span>anguage is the standard markup language for documents designed to be  displayed in a web browser.Can be assisted by technologies such as Cascading Style Sheets and  scripting languages such as JavaScript.  </li>
+                 <li><span>Hypertext</span> is text displayed on a computer display or other electronic devices with references to  other text that the reader can immediately access. Hypertext documents are interconnected by  hyperlinks, which are typically activated by a mouse click, keypress set or by touching the screen</li>
+                 <li>A<span> markup</span> language is a computer language that uses tags to define elements within a document.  It is human-readable, meaning markup files contain standard words, rather than typical  programming syntax. </li>   
+                </p>
             </div>
         </div>
         <div class="item">
         	<div class="heading jumbotron">
-        		<h1>HTML 2</h1>
+        		<h1>  2)BASIC TASK OF HTML AS COMPARED TO CSS AND JS  </h1>
         	</div>
             <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            	<p class="align-middle">To create actual content of the page such as written text,or taking inputs from the user etc..  It basically defines the structure and content of  a page.</p>
+                <p><a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit">layout</a> </p>
             </div>
         </div>
         <div class="item">
         	<div class="heading jumbotron">
-        		<h1>HTML 3</h1>
+        		<h1>3)TAGS </h1>
         	</div>
             <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            	
+                <li>A tag is a special word or letter surrounded by angle brackets, < and >.</li>
+                <li> Let’s say it have a predefined meaning,which tells the browser how the contents within the tag is  to be treated as</li>
+                <li><a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit"><span>Syntax and Example</span></a></li>
+                <br>
+                <li><span>Note:</span>Some tags do not have end tags</li>
+            </div>
+        </div>
+       
+       <div class="item">
+          <div class="heading jumbotron">
+                <h1>LIST OF TAGS </h1>
+            </div>
+
+         <div class="extra_div jumbotron lead">
+
+            	<p style="display: inline-block;">
+                    <ul>
+                        <li>h1-h6</li>
+                        <li>hr</li>
+                        <li>br</li>
+                    </ul>
+               </p>
+                <p style="display: inline-block; margin-left: 5%;">
+                    <ul>
+                        <li>p</li>
+                        <li>div</li>
+                        <li>span</li>
+                    </ul>
+                </p>
+                <p style="display: inline-block; margin-left: 5%;">
+                <ul>
+                    <li>a</li>
+                    <li>img</li>
+                    <li>strong</li>
+                </ul>
+                </p>
+                <p style="display: inline-block; margin-left: 5%;">
+                    <ul>
+                        <li>style</li>
+                        <li>link</li>
+                        <li>script</li>
+                    </ul>
+                </p>
+                <br>
+                <p style="display: inline-block; ">
+                    <ul>
+                        <li><span> List: </span> </li>
+                            <ol>
+                                <li>ol</li>
+                                <li>ul</li>
+                                <li>li</li>
+                            </ol>
+                        </ul>
+                </p>
+                <p style="display: inline-block; margin-left: 5%;">
+                    <ul>
+                        <li><span>Table:</span></li>
+                            <ol>
+                                <li>table</li>
+                                <li>th</li>
+                                <li>tr</li>
+                            </ol>
+                    </ul>
+                </p>
+                <p style="display: inline-block; margin-left: 5%;">
+                    <ul>
+                        <li><span>Form:</span></li>
+                            <ol>
+                                <li>form</li>
+                                <li>label</li>
+                                <li>input</li>
+                            </ol>
+                    </ul>
+                </p>
             </div>
         </div>
         <div class="item">
         	<div class="heading jumbotron">
-        		<h1>HTML 4</h1>
+        		<h1>ATTRIBUTES </h1>
         	</div>
             <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
-        <div class="item">
-        	<div class="heading jumbotron">
-        		<h1>HTML 5</h1>
-        	</div>
-            <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            	<p class="align-middle">
+                   <li>An attribute is used to define the characteristics of an HTML element and is placed inside the  element's opening tag.</li>
+                   <li>All attributes are made up of two parts − a name and a value </li>
+                   <li><strong>Example:</strong>width="100%"</li>
+                   <li>A tag can have more then one attributes,which are seperated by a space</li>   
+                </p>
             </div>
         </div> 
+        
         <div class="item">
-        	<div class="heading jumbotron">
-        		<h1>HTML 6</h1>
-        	</div>
-            <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="extra_div jumbotron lead">
+                <div>
+                    <strong>1)Headers:h1 to h6 </strong>
+                          <li>The h1 to h6 tags are used to define HTML headings.  </li>
+                          <li> <span>h1</span> defines the most important heading. <span>h6</span> defines the least important heading    </li>
+                    
+                    <strong>2)Horizontal row:hr tag</strong>
+                        <li>The hr tag defines a thematic break/change of content in an HTML page (e.g. a shift of topic)</li>
+                        <li>No end tag</li>
+                    
+                    <strong>3)Break:br tag</strong>
+                        <li>The br tag inserts a line break</li>
+                        <li>No end tag</li>
+                    
+                   <strong> 4)Paragraph:p tag</strong>
+                        <li>Browsers automatically add some space (margin) before and after each p element</li>
+                    
+                    <strong>5)Divison:div tag</strong>
+                        <li>The div tag defines a division or a section in an HTML document.</li>
+                    
+                    <strong>6)span tag</strong>
+                        <li>The span tag provides a way to add a hook to a part of a text or a part of documen</li>
+            </div>
+           </div>
+        </div> 
+
+         <div class="item">
+            <div class="extra_div jumbotron lead">
+                <div>
+                    7)Image :img tag
+                    <li>The tag defines an image in an HTML page. </li>
+                    <li>The img tag has two required attributes: <span>src</span> and <span> alt.</span>  </li>
+                   <p> -src :image to be displayed<br>  
+                    -alt:Name to be displayed incase image is not displayed <br> 
+                    -other attributes​:height,width
+                </p>
+                 EG​: (tag_name in angle brackets) src="smiley.gif" alt="Smiley face" height="42" width="42> (close angle brackets)
+                 <img src="smiley.gif" alt="Smiley face" height="42" width="42">    
+                </div>
             </div>
         </div>
+
+        <div class="item">
+        	<div class="heading jumbotron">
+        		<h1>8)Anchor tag</h1>
+        	</div>
+            <div class="heading_content jumbotron lead">
+            	<li>The a tag defines a hyperlink, which is used to link from one page to another  </li>
+                <li>The most important attribute of the a element is the <span>href</span> attribute, which indicates the link's  destination.  </li>
+                <li><strong>Syntax​:</strong>   (opening tag) href=”link”>Link to be clicked (/closing tag) </li>
+                <li><strong> Eg : </strong>:<a href=”​www.google.com​”>Click here to visit google</a> </li>
+                <li>href itself has some of its attributes which includes: <strong> 1)mailto: 2)tel: </strong> </li>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+                <div>
+                    9)style tag
+                    <li>Inside the style element you specify how HTML elements should render in a browser.</li>
+                    <li><strong>Syntax:</strong>Html_element{attribute:value;}  </li>
+                    <li><strong>Example:</strong>H1{color:blue;}  </li>
+                    <br>
+                    10)link tag
+                    <li>Used to define link between the html document and other external resources.</li>  
+                    <li><strong>Example:</strong>(link rel="stylesheet" type="text/css" href="exp1.css")</li>
+                    <br>
+                    11)script tag
+                    <li>Used to define client side script</li>
+                    <li><strong>Example:</strong>(script type="text/javascript"  src="exp1.js")    (/script)  
+                       
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="heading jumbotron">
+                <h1>12)Tags for making  a list</h1>
+            </div>
+            <div class="heading_content jumbotron lead">
+                <li>The items listed under <span>ol</span> tag are ordered</li>
+                <li>The items listed under <span>ul</span> tag are unordered</li>
+                <li><span>li</span> is used for listing each item under ol and ul tags.</li>
+                <li>Eg:Places to visit in Delhi:
+               <UL>
+               <LI>RED FORT</LI>
+               <LI> HUMAYUN'S TOMB</LI>
+               <LI>INDIA GATE</LI>
+             </UL>
+               <li>Try this yourself:<a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit">image</a></li>
+            </div>
+        </div>
+
+          <div class="item">
+            <div class="extra_div jumbotron lead">
+                <div>
+                   13)TABLE
+                   <li>The table tag defines an HTML table.  </li>
+                   <li>An HTML table consists of the table element and one or more ​tr​, ​th​, and ​td​ element </li>
+                   <li>Attributes:​border,width,height    </li>
+                   <li><span>th</span> Defines table head  <span>tr</span> Defines table row  <span>td</span> Defines table cell  </li>
+                   <li><span>rowspan,colspan</span> are two attributes of the'th'tag.</li>
+                   <li>Try:<a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit"> Image</a><br>
+                   <br>
+                   <li>The <strong>tbody</strong> element is used in conjunction with the ​<span>thead</span> and ​<span>tfoot</span>​ elements to specify each  part of a table (body, header, footer). </li>
+                  <li> Eg:<a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit">Image</a></li>
+                </div>
+            </div>
+        </div>
+
+         <div class="item">
+            <div class="extra_div jumbotron lead">
+                <div>
+                   14)FORM
+                   <li>It used to create an html form.  </li>
+                   <li>Various elements of a form:  1]label 2]input 3]button</li>
+                   <li><a href="https://docs.google.com/document/d/13tFQ_3hWLq7jFTUcaDHyefWdBhtSW-yJWqKF9XrEHRw/edit">Image</a></li>    
+                   <br>
+                   <li><span>label</span>  This tag defines a label for the input or button 
+                   <p> <strong>Attributes:</strong>for</li></p><br>
+                   <li><span>input</span>  Takes input from the user</li>
+                   <li><strong>Attributes:-</strong>
+                    1)name  2)required  3)placeholder  4)accept  5)disabled
+                    6)src:url
+                    7)form_method:get or post
+                    8)type:text,number,email,date,password,image,file,submit,button,checkbox,radio.  
+                </li>
+                <li>Eg:<form>
+                     <label for="FName">First Name:</label>
+                    <input id="FName" type="text" placeholder="John" required  >
+                </form>
+            </li>
+    
+
+                </div>
+            </div>
+        </div>
+
+        
     </div>
 </div>
 <div id="css_info" style="display: none;">
