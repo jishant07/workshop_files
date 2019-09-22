@@ -217,39 +217,39 @@
                 <h1>LIST OF TAGS </h1>
             </div>
 
-         <div class="extra_div jumbotron lead">
+         <div class="heading_content jumbotron lead">
 
-            	<p style="display: inline-block;">
-                    <ul>
+            	<!-- <p style="display: inline-block;"> -->
+                    <ul style="display: inline-block;">
                         <li>h1-h6</li>
                         <li>hr</li>
                         <li>br</li>
                     </ul>
-               </p>
-                <p style="display: inline-block; margin-left: 5%;">
-                    <ul>
+              <!--  </p> -->
+               <!--  <p style="display: inline-block; margin-left: 5%;"> -->
+                    <ul style="display: inline-block;">
                         <li>p</li>
                         <li>div</li>
                         <li>span</li>
                     </ul>
-                </p>
-                <p style="display: inline-block; margin-left: 5%;">
-                <ul>
+                <!-- </p> -->
+                <!-- <p style="display: inline-block; margin-left: 5%;"> -->
+                <ul style="display: inline-block; margin-left: 5%;">
                     <li>a</li>
                     <li>img</li>
                     <li>strong</li>
                 </ul>
-                </p>
-                <p style="display: inline-block; margin-left: 5%;">
-                    <ul>
+                <!-- </p> -->
+                <!-- <p style="display: inline-block; margin-left: 5%;"> -->
+                    <ul style="display: inline-block; margin-left: 5%;">
                         <li>style</li>
                         <li>link</li>
                         <li>script</li>
                     </ul>
-                </p>
-                <br>
-                <p style="display: inline-block; ">
-                    <ul>
+                <!-- </p> -->
+                <!-- <br> -->
+                <!-- <p style="display: inline-block; "> -->
+                    <ul style="display: inline-block; margin-left: 5%;">
                         <li><span> List: </span> </li>
                             <ol>
                                 <li>ol</li>
@@ -257,9 +257,9 @@
                                 <li>li</li>
                             </ol>
                         </ul>
-                </p>
-                <p style="display: inline-block; margin-left: 5%;">
-                    <ul>
+                <!-- </p> -->
+                <!-- <p style="display: inline-block; margin-left: 5%;"> -->
+                    <ul style="display: inline-block; margin-left: 5%;">
                         <li><span>Table:</span></li>
                             <ol>
                                 <li>table</li>
@@ -267,9 +267,9 @@
                                 <li>tr</li>
                             </ol>
                     </ul>
-                </p>
-                <p style="display: inline-block; margin-left: 5%;">
-                    <ul>
+                <!-- </p> -->
+               <!--  <p style="display: inline-block; margin-left: 5%;"> -->
+                    <ul style="display: inline-block; margin-left: 5%;">
                         <li><span>Form:</span></li>
                             <ol>
                                 <li>form</li>
@@ -277,7 +277,7 @@
                                 <li>input</li>
                             </ol>
                     </ul>
-                </p>
+                <!-- </p> -->
             </div>
         </div>
         <div class="item">
@@ -677,70 +677,147 @@
 											BOOTSTRAP SECTION
     		/////////////////////////////////////////////////////////////////////////////// -->
         <div class="item">
-       		<div class="heading jumbotron">
-        		<h1>BOOTSTRAP 1</h1>
-        	</div>
-            <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">BOOTSTRAP 4</p>
+     			</div>
             </div>
         </div>
         <div class="item">
-        	<div class="heading jumbotron">
-        		<h1>BOOTSTRAP 2</h1>
-        	</div>
-            <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">WHAT IS BOOTSTRAP?</p>
+     			</div>
             </div>
         </div>
         <div class="item">
-        	<div class="heading jumbotron">
-        		<h1>BOOTSTRAP 3</h1>
-        	</div>
-            <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">DOES IT MAKE THINGS EASIER?</p>
+     			</div>
             </div>
         </div>
         <div class="item">
-        	<div class="heading jumbotron">
-        		<h1>BOOTSTRAP 4</h1>
-        	</div>
-            <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">MUCH EASIER???</p>
+     			</div>
             </div>
         </div>
         <div class="item">
-        	<div class="heading jumbotron">
-        		<h1>BOOTSTRAP 5</h1>
-        	</div>
-            <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">WAS HTML AND CSS WASTE OF TIME?</p>
+     			</div>
             </div>
         </div>
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">WELL YES BUT ACTUALLY NO<p>
+     			</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">BOOTSTRAP CDN<p>
+     					<br>
+     				<p class="display-4">(CONTENT DELIVERY NETWORK)</p>
+     			</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">BOOTSTRAP GRIDS<p>
+     			</div>
+            </div>
+        </div> 
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">TYPOGRAPHY<p>
+     			</div>
+            </div>
+        </div>  
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">COLORS & IMAGES<p>
+     			</div>
+            </div>
+        </div>   
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">CONTAINER<p>
+     			</div>
+            </div>
+        </div>     
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">JUMBOTRON<p>
+     			</div>
+            </div>
+        </div>   
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">BUTTONS<p>
+     			</div>
+            </div>
+        </div>    
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">NAVBARS<p>
+     			</div>
+            </div>
+        </div>    
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">FORMS<p>
+     			</div>
+            </div>
+        </div>     
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">CARDS<p>
+     			</div>
+            </div>
+        </div>     
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">MODAL<p>
+     			</div>
+            </div>
+        </div>      
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">CAROUSEL<p>
+     			</div>
+            </div>
+        </div>      
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">POPOVER, TOAST & SPINNERS<p>
+     			</div>
+            </div>
+        </div>      
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+     			<div class="mid">
+     				<p class="display-1">FLEX BOX<p>
+     			</div>
+            </div>
+        </div> 
     </div>
 </div>
 <div id="javascript_info" style="display: none;">
