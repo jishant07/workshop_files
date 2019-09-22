@@ -852,9 +852,6 @@
                 </p>
                 <p>Alerts are something that is pops as a message <br>
                     Different site employs them in a different way <br>
-                    For eg : The site that we are going to aggregate to
-                    uses them for messages. <br>
-                    This is not considered a good practice but it helps you begin.
                 </p>
             </div>
             </div>
@@ -890,13 +887,22 @@
             <div class="heading_content jumbotron lead">
                 <h3 class="text-center">document.addEventListener("event",callback)</h3>
                 or
-                <p class="display-4">Inside HTML tags, function call</p>
+                <h3 class="text-center">or <br> Inside HTML tags, function call</h3>
             </div>
         </div>
         <div class="item">
         	<div class="extra_div jumbotron lead">
                 <div class="mid">
                     <p class="display-1">jQUERY<p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+                <div class="mid">
+                    <p class="display-1">"$"<p>
+                        <br>
+                    <h3 class="display-4">And it is done!</h3>
                 </div>
             </div>
         </div>
@@ -909,6 +915,15 @@
 											PHP SECTION
     		/////////////////////////////////////////////////////////////////////////////// -->
         <div class="item">
+            <div class="extra_div jumbotron lead">
+                <div class="mid">
+                    <p class="display-1">PHP<p>
+                        <br>
+                    <h3 class="display-4">PERSONAL HOME PAGE</h3>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="item">
          	<div class="heading jumbotron">
         		<h1>PHP 1</h1>
         	</div>
@@ -972,7 +987,7 @@
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 <div id="php_info" style="display: none;">
@@ -982,68 +997,42 @@
 											SQL SECTION
     		/////////////////////////////////////////////////////////////////////////////// -->
         <div class="item">
-         	<div class="heading jumbotron">
-        		<h1>SQL 1</h1>
-        	</div>
-            <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         	<div class="extra_div jumbotron lead">
+                <div class="mid">
+                    <p class="display-1">SQL<p>
+                </div>
             </div>
         </div>
         <div class="item">
         	<div class="heading jumbotron">
-        		<h1>SQL 2</h1>
+        		<h1>INSERT QUERY</h1>
         	</div>
             <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            	<p class="display-4 text-center">INSERT INTO `table_name` (`column1`....) VALUES (`col_val_1`...)</p>
             </div>
         </div>
         <div class="item">
         	<div class="heading jumbotron">
-        		<h1>SQL 3</h1>
+        		<h1>UPDATE QUERY</h1>
         	</div>
             <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="display-4 text-center">UPDATE `table_name` SET `column_name`='Value'</p>
             </div>
         </div>
         <div class="item">
         	<div class="heading jumbotron">
-        		<h1>SQL 4</h1>
-        	</div>
+                <h1>DELETE QUERY</h1>
+            </div>
             <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="display-4 text-center">DELETE FROM `table_name` WHERE `column_name`='value'</p>
             </div>
         </div>
         <div class="item">
         	<div class="heading jumbotron">
-        		<h1>SQL 5</h1>
-        	</div>
+                <h1>TRUNCATE QUERY</h1>
+            </div>
             <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="display-4 text-center">TRUNCATE `table_name`</p>
             </div>
         </div>
     </div>
