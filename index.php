@@ -176,7 +176,13 @@
         <!-- /////////////////////////////////////////////////////////////////////////////// 
 											HTML SECTION
     		/////////////////////////////////////////////////////////////////////////////// -->
-
+        <div class="item">
+            <div class="extra_div jumbotron lead">
+                <div class="mid">
+                    <p class="display-1">HTML</p>
+                </div>
+            </div>
+        </div>
         <div class="item">
         	<div class="heading jumbotron">
         		<h1>1)WHAT IS HTML? </h1>
@@ -345,7 +351,7 @@
             	<li>The a tag defines a hyperlink, which is used to link from one page to another  </li>
                 <li>The most important attribute of the a element is the <span>href</span> attribute, which indicates the link's  destination.  </li>
                 <li><strong>Syntax​:</strong>   (opening tag) href=”link”>Link to be clicked (/closing tag) </li>
-                <li><strong> Eg : </strong>:<a href=”​www.google.com​”>Click here to visit google</a> </li>
+                <li><strong> Eg : </strong>:<a href="https://www.google.com​">Click here to visit google</a> </li>
                 <li>href itself has some of its attributes which includes: <strong> 1)mailto: 2)tel: </strong> </li>
             </div>
         </div>
@@ -827,68 +833,71 @@
 											JAVASCRIPT SECTION
     		/////////////////////////////////////////////////////////////////////////////// -->
         <div class="item">
-        	<div class="heading jumbotron">
-        		<h1>JAVASCRIPT 1</h1>
-        	</div>
+            <div class="extra_div jumbotron lead">
+                <div class="mid">
+                    <p class="display-1">JAVASCRIPT<p>
+                </div>
+            </div>
+        </div> 
+        <div class="item">
+        	<div class="extra_div jumbotron lead">
+                <div class="heading jumbotron">
+                <h1>ALERTs & CONSOLE.LOG</h1>
+            </div>
             <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>
+                    <strong>Console.log</strong> is a developer's friend, it helps you in knowing how the data is flowing by basically working as a print statement.
+                    <br>
+                    This is not visible to the user, unless it is us (Because we are smart).
+                </p>
+                <p>Alerts are something that is pops as a message <br>
+                    Different site employs them in a different way <br>
+                    For eg : The site that we are going to aggregate to
+                    uses them for messages. <br>
+                    This is not considered a good practice but it helps you begin.
+                </p>
+            </div>
+            </div>
+        </div>
+        <div class="item">
+        	<div class="extra_div jumbotron lead">
+                <div class="mid">
+                    <p class="display-1">DOM<p>
+                        <br>
+                <p class="display-4">(DOCUMENT OBJECT MODEL)</p>
+                </div>
             </div>
         </div>
         <div class="item">
         	<div class="heading jumbotron">
-        		<h1>JAVASCRIPT 2</h1>
-        	</div>
+                <h1>SELECTORS</h1>
+            </div>
             <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <ul>
+                    <li>document.getElementById('id_name')</li>
+                    <li>document.getElementByClassName('class_name')</li>
+                    <li>document.getElementByName('name')</li>
+                    <li>document.getElementByTagName('tag_name')</li>
+                    <li>document.querySelector('css_selector')</li>
+                    <li>document.querySelectorAll('css_selector')</li>
+                </ul>
             </div>
         </div>
         <div class="item">
         	<div class="heading jumbotron">
-        		<h1>JAVASCRIPT 3</h1>
-        	</div>
+                <h1>EVENTs</h1>
+            </div>
             <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h3 class="text-center">document.addEventListener("event",callback)</h3>
+                or
+                <p class="display-4">Inside HTML tags, function call</p>
             </div>
         </div>
         <div class="item">
-        	<div class="heading jumbotron">
-        		<h1>JAVASCRIPT 4</h1>
-        	</div>
-            <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
-        <div class="item">
-        	<div class="heading jumbotron">
-        		<h1>JAVASCRIPT 5</h1>
-        	</div>
-            <div class="heading_content jumbotron lead">
-            	<p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        	<div class="extra_div jumbotron lead">
+                <div class="mid">
+                    <p class="display-1">jQUERY<p>
+                </div>
             </div>
         </div>
     </div>
